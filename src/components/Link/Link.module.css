@@ -1,0 +1,42 @@
+.link {
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+  text-decoration: none;
+  position: relative;
+}
+
+.link:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0px;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.4s width linear;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
+.link:hover:after {
+  width: 100%;
+}
+
+.btn {
+  width: 140px;
+  height: 56px;
+  border-radius: 28px;
+  border: none;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #283643;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+  background-color: rgb(250 250 250 / 60%);
+  cursor: pointer;
+}
