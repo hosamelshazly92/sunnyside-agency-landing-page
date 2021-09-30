@@ -10,6 +10,11 @@ import {
   direction,
   custom,
   title,
+  imageGallery,
+  footer,
+  sectionSocialMedia,
+  linkSocialMedia,
+  iconSocialMedia,
 } from "./App.module.css";
 import logo from "./images/logo.svg";
 import Link from "./components/Link/Link";
@@ -25,6 +30,14 @@ import Testimonial from "./components/Testimonial/Testimonial";
 import imageEmily from "./images/image-emily.jpg";
 import imageThomas from "./images/image-thomas.jpg";
 import imageJennie from "./images/image-jennie.jpg";
+import imageGalleryMilkbottles from "./images/desktop/image-gallery-milkbottles.jpg";
+import imageGalleryOrange from "./images/desktop/image-gallery-orange.jpg";
+import imageGalleryCone from "./images/desktop/image-gallery-cone.jpg";
+import imageGallerySugarcubes from "./images/desktop/image-gallery-sugarcubes.jpg";
+import iconFacebook from "./images/icon-facebook.svg";
+import iconInstagram from "./images/icon-instagram.svg";
+import iconTwitter from "./images/icon-twitter.svg";
+import iconPinterest from "./images/icon-pinterest.svg";
 
 function App() {
   const menu = [
@@ -40,8 +53,8 @@ function App() {
     },
     {
       id: uuid(),
-      nam: "Projects",
-      link: "#projects",
+      nam: "About",
+      link: "#about",
     },
     {
       id: uuid(),
@@ -150,6 +163,52 @@ function App() {
           ))}
         </div>
       </div>
+
+      <div className={section}>
+        <img
+          className={imageGallery}
+          src={imageGalleryMilkbottles}
+          alt="gallery shot"
+        />
+        <img
+          className={imageGallery}
+          src={imageGalleryOrange}
+          alt="gallery shot"
+        />
+        <img
+          className={imageGallery}
+          src={imageGalleryCone}
+          alt="gallery shot"
+        />
+        <img
+          className={imageGallery}
+          src={imageGallerySugarcubes}
+          alt="gallery shot"
+        />
+      </div>
+
+      <footer className={footer}>
+        <img className={imageLogo} src={logo} alt="web logo" />
+
+        <div className={sectionSocialMedia}>
+          <a className={linkSocialMedia} href="#home">
+            Home
+          </a>
+          <a className={linkSocialMedia} href="#services">
+            Services
+          </a>
+          <a className={linkSocialMedia} href="#about">
+            About
+          </a>
+        </div>
+
+        <div className={iconSocialMedia}>
+          <img src={iconFacebook} alt="social media link" />
+          <img src={iconInstagram} alt="social media link" />
+          <img src={iconTwitter} alt="social media link" />
+          <img src={iconPinterest} alt="social media link" />
+        </div>
+      </footer>
     </Fragment>
   );
 }
