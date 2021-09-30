@@ -5,5 +5,10 @@
   font-family: "Rokkitt", serif;
   text-transform: uppercase;
   position: relative;
-  border-bottom: 2px solid #f00;
+  transition: all 0.4s ease-in-out;
+}
+
+.cta:hover {
+  cursor: pointer;
+  background-color: #f6f6f6;
 }

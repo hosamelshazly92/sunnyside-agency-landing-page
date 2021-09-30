@@ -14,7 +14,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 720px;
+  height: 800px;
 }
 
 .nav {
@@ -81,4 +81,19 @@ li {
 
 .reverse {
   flex-direction: row-reverse;
+}
+
+.direction {
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom {
+  padding: 200px 100px;
+}
+
+.title {
+  font-size: 32px;
+  color: #acacae;
+  text-transform: uppercase;
 }

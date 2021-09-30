@@ -3,7 +3,9 @@ import { cta } from "./CTA.module.css";
 const CTA = ({ children }) => {
   return (
     <div>
-      <a className={cta}>{children}</a>
+      <a className={cta} href="#learnmore">
+        {children}
+      </a>
     </div>
   );
 };
