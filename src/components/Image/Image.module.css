@@ -3,3 +3,10 @@
   height: 800px;
   object-fit: cover;
 }
+
+@media (max-width: 375px) {
+  .container {
+    width: 100vw;
+    height: 340px;
+  }
+}

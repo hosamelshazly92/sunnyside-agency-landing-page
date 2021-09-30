@@ -1,6 +1,8 @@
 import {
   container,
   nav,
+  navMenu,
+  iconNavMenu,
   imageLogo,
   content,
   pitch,
@@ -38,6 +40,7 @@ import iconFacebook from "./images/icon-facebook.svg";
 import iconInstagram from "./images/icon-instagram.svg";
 import iconTwitter from "./images/icon-twitter.svg";
 import iconPinterest from "./images/icon-pinterest.svg";
+import iconMenu from "./images/icon-hamburger.svg";
 
 function App() {
   const menu = [
@@ -124,13 +127,15 @@ function App() {
         <div className={nav}>
           <img className={imageLogo} src={logo} alt="web logo" />
 
-          <ul>
+          <ul className={navMenu}>
             {menu.map((link) => (
               <li key={link.id}>
                 <Link data={link} />
               </li>
             ))}
           </ul>
+
+          <img className={iconNavMenu} src={iconMenu} alt="menu icon" />
         </div>
 
         <div className={content}>

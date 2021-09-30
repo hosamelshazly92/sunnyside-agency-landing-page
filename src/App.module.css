@@ -26,7 +26,7 @@
   padding: 40px;
 }
 
-ul {
+.navMenu {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -36,6 +36,10 @@ ul {
 
 li {
   display: inline-block;
+}
+
+.iconNavMenu {
+  display: none;
 }
 
 .imageLogo {
@@ -73,6 +77,7 @@ li {
   letter-spacing: 8px;
   margin: 72px 0;
   font-family: "Rokkitt", serif;
+  text-align: center;
 }
 
 .section {
@@ -96,6 +101,7 @@ li {
   font-size: 32px;
   color: #acacae;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .imageGallery {
@@ -134,4 +140,72 @@ li {
   display: flex;
   justify-content: space-between;
   width: 160px;
+}
+
+@media (max-width: 375px) {
+  .container {
+    height: 668px;
+  }
+
+  .nav {
+    padding: 24px;
+  }
+
+  .navMenu {
+    display: none;
+  }
+
+  .iconNavMenu {
+    display: inline-block;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pitch {
+    font-size: 40px;
+  }
+
+  .imageArrow {
+    width: 32px;
+    height: 120px;
+  }
+
+  .section {
+    flex-direction: column;
+  }
+
+  .reverse {
+    flex-direction: column;
+  }
+
+  .custom {
+    padding: 80px 24px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .imageGallery {
+    width: 100vw;
+    height: 280px;
+  }
+
+  .sectionSocialMedia {
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+    margin: 40px 0;
+  }
+
+  .iconSocialMedia {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+  }
 }

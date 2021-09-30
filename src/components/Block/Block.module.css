@@ -6,6 +6,12 @@
   justify-content: center;
 }
 
+.title {
+  font-size: 56px;
+  font-weight: 900;
+  font-family: "Rokkitt", serif;
+}
+
 .text {
   color: #7f7f88;
   margin: 56px 0;
@@ -13,8 +19,21 @@
   line-height: 1.5;
 }
 
-.title {
-  font-size: 56px;
-  font-weight: 900;
-  font-family: "Rokkitt", serif;
+@media (max-width: 375px) {
+  .container {
+    width: 100%;
+    padding: 80px 24px;
+    align-items: center;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 48px;
+  }
+
+  .text {
+    text-align: center;
+    margin: 32px 0;
+    font-size: 16px;
+  }
 }

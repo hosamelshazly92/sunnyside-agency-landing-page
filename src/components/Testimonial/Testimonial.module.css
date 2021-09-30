@@ -29,3 +29,18 @@
   color: #aeb4b9;
   font-weight: 800;
 }
+
+@media (max-width: 375px) {
+  .container {
+    margin: 32px 0;
+  }
+
+  .picture {
+    margin: 16px 0;
+  }
+
+  .text {
+    margin-top: 16px;
+    padding: 0 24px;
+  }
+}
